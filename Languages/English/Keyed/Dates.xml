@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DLetterMinute>m</DLetterMinute>
+  <TiCo.CurrentModVersion>Installed mod-version: {0}</TiCo.CurrentModVersion>
+  <TiCo.DayLength>Length of day multiplier</TiCo.DayLength>
+  <TiCo.KeepWorkSpeed>Keep work speed relatively the same per day</TiCo.KeepWorkSpeed>
+  <TiCo.KeepWorkSpeed.Tooltip>Disabling this will allow your colonists to get more work done in each day (if you make days longer), at the cost of making the game easier.</TiCo.KeepWorkSpeed.Tooltip>
+  <TiCo.Advanced>Show Advanced (Use at your own risk)</TiCo.Advanced>
+  <TiCo.Advanced.Tooltip>Use at your own risk.</TiCo.Advanced.Tooltip>
+  <TiCo.DontScale>Don't scale anything (not recommended)</TiCo.DontScale>
+  <TiCo.DontScale.Tooltip>Don't scale anything. This basically just makes this mod a custom game speed controller.</TiCo.DontScale.Tooltip>
+  <TiCo.ScalePawns>Scale pawns with length of day (recommended)</TiCo.ScalePawns>
+  <TiCo.ScalePawns.Tooltip>This will make sure your colonists eat, sleep, mine, craft, and so on at the normal rate per day of the base game. Disabling may cause weird (but potentially interesting?) things to happen. You've been warned.</TiCo.ScalePawns.Tooltip>
+  <TiCo.UnlockSpeed>Unlock speed slider</TiCo.UnlockSpeed>
+  <TiCo.UnlockSpeed.Tooltip>This is probably a bad idea.</TiCo.UnlockSpeed.Tooltip>
+  <TiCo.Really>Really? Are you sure? Extreme settings will cause... strange things to happen</TiCo.Really>
+  <TiCo.Really.Tooltip>You've been warned.</TiCo.Really.Tooltip>
+</LanguageData>
