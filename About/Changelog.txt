@@ -1,5 +1,9 @@
 # Changelog for DTimeControl
 
+1.4.2 - Shuttle-quests should now work correctly.
+Used DeepL to update translations for ChineseSimplified, French, German, Russian
+
+
 1.4.1 - First real publish
 
 

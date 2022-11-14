@@ -206,6 +206,15 @@ public static class TimeControlBase
                 Log.Error(ex13.ToString());
             }
 
+            try
+            {
+                Find.TransportShipManager.ShipObjectsTick();
+            }
+            catch (Exception ex14)
+            {
+                Log.Error(ex14.ToString());
+            }
+
             partialTick -= 1.0;
         }
         else
