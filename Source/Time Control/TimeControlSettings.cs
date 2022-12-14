@@ -3,7 +3,7 @@ using Verse;
 
 namespace DTimeControl;
 
-internal class TimeControlSettings : ModSettings
+public class TimeControlSettings : ModSettings
 {
     public static float speedMultiplier = 1.25f;
     public static bool scalePawns = true;

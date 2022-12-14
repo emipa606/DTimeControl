@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30011.22
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Time Control", "Time Control\Time Control.csproj", "{E4B1C024-7D83-467B-8775-ED5C0ADB89F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Time Control", "Time Control\Time Control.csproj", "{E4B1C024-7D83-467B-8775-ED5C0ADB89F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapOutPatch", "SnapOutPatch\SnapOutPatch.csproj", "{0C4B5A6F-CA40-4C98-8DA6-40F7B01A1A02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{E4B1C024-7D83-467B-8775-ED5C0ADB89F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4B1C024-7D83-467B-8775-ED5C0ADB89F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4B1C024-7D83-467B-8775-ED5C0ADB89F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C4B5A6F-CA40-4C98-8DA6-40F7B01A1A02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C4B5A6F-CA40-4C98-8DA6-40F7B01A1A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C4B5A6F-CA40-4C98-8DA6-40F7B01A1A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C4B5A6F-CA40-4C98-8DA6-40F7B01A1A02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
