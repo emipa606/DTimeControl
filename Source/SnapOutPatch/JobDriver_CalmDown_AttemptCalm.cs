@@ -13,9 +13,9 @@ internal class JobDriver_CalmDown_AttemptCalm
     {
         foreach (var toil in values)
         {
-            if (toil.defaultDuration == SOMod.Settings.CalmDuration)
+            if (toil.debugName == "WaitWith")
             {
-                toil.defaultDuration /= (int)Math.Floor(TimeControlSettings.speedMultiplier);
+                toil.defaultDuration = (int)Math.Ceiling(toil.defaultDuration / TimeControlSettings.speedMultiplier);
             }
 
             yield return toil;

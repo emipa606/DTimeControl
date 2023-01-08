@@ -1,5 +1,8 @@
 # Changelog for DTimeControl
 
+1.4.4 - Fixed the snapout patch
+
+
 1.4.3 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1319782555]Snap Out![/url]
 
 

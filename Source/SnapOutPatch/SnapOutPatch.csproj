@@ -1,38 +1,38 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<OutputPath>..\..\SnapOut\1.4\Assemblies</OutputPath>
-		<TargetFramework>net48</TargetFramework>
-		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
-		<DebugType>None</DebugType>
-		<LangVersion>latest</LangVersion>
-		<FileVersion>1.4.3</FileVersion>
-	</PropertyGroup>
-	<ItemGroup>
-		<PackageReference Include="Krafs.Rimworld.Ref">
-			<Version>*</Version>
-			<ExcludeAssets>runtime</ExcludeAssets>
-			<IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="Lib.Harmony">
-			<Version>*</Version>
-			<ExcludeAssets>runtime</ExcludeAssets>
-		</PackageReference>
-		<ProjectReference Include="..\Time Control\Time Control.csproj">
-			<CopyLocalSatelliteAssemblies>False</CopyLocalSatelliteAssemblies>
-			<CopyLocal>False</CopyLocal>
-			<Private>false</Private>
-			<ExcludeAssets>all</ExcludeAssets>
-		</ProjectReference>
-		<Reference Include="SnapOut">
-			<HintPath>..\..\..\..\..\..\workshop\content\294100\1319782555\1.4\Assemblies\SnapOut.dll</HintPath>
-			<CopyLocal>False</CopyLocal>
-			<Private>false</Private>
-		</Reference>
-	</ItemGroup>
-	<ItemDefinitionGroup>
-		<ProjectReference>
-			<PrivateAssets>all</PrivateAssets>
-		</ProjectReference>
-	</ItemDefinitionGroup>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputPath>..\..\SnapOut\1.4\Assemblies</OutputPath>
+    <TargetFramework>net48</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+    <DebugType>None</DebugType>
+    <LangVersion>latest</LangVersion>
+    <FileVersion>1.4.4</FileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Krafs.Rimworld.Ref">
+      <Version>*</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
+      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>*</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <ProjectReference Include="..\Time Control\Time Control.csproj">
+      <CopyLocalSatelliteAssemblies>False</CopyLocalSatelliteAssemblies>
+      <CopyLocal>False</CopyLocal>
+      <Private>false</Private>
+      <ExcludeAssets>all</ExcludeAssets>
+    </ProjectReference>
+    <Reference Include="SnapOut">
+      <HintPath>..\..\..\..\..\..\workshop\content\294100\1319782555\1.4\Assemblies\SnapOut.dll</HintPath>
+      <CopyLocal>False</CopyLocal>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemDefinitionGroup>
+    <ProjectReference>
+      <PrivateAssets>all</PrivateAssets>
+    </ProjectReference>
+  </ItemDefinitionGroup>
 </Project>

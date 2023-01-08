@@ -7,6 +7,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2109225757
 with the 1.3 version from the update by Denneisk
 https://steamcommunity.com/sharedfiles/filedetails/?id=2558693847
 
+- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=1319782555]Snap Out!
+
 ![Image](https://i.imgur.com/pufA0kM.png)
 
 	
@@ -104,4 +106,5 @@ Known conflicts:
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2887355135]Last updated 2022-12-14
+
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2887355135]Last updated 2023-01-08
