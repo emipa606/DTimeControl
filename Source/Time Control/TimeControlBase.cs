@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
@@ -12,8 +13,21 @@ public static class TimeControlBase
 
     public static int cycleLength = 1;
 
+    public static readonly List<string> ExcludedListOfJobDrivers;
+
     static TimeControlBase()
     {
+        ExcludedListOfJobDrivers = new List<string>
+        {
+            "JobDriver_TendPatient",
+            "JobDriver_Stabilize",
+            "JobDriver_Lovin",
+            "TMJobDriver_CastAbilityVerb", // A RimWorld of Magic
+            "TMJobDriver_CastAbilitySelf", // A RimWorld of Magic
+            "JobDriver_GotoAndCast", // A RimWorld of Magic
+            "JobDriver_ReloadTurret", // Combat Extended
+            "JobDriver_Reload" // Combat Extended
+        };
     }
 
     public static void SetCycleLength()

@@ -1,5 +1,8 @@
 # Changelog for DTimeControl
 
+1.4.5 - Added some combat extended job-drivers to the exclusions
+
+
 1.4.4 - Fixed the snapout patch
 
 

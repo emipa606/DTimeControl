@@ -7,7 +7,7 @@ namespace DTimeControl.Core_Patches;
 [HarmonyPatch("SignalForceNormalSpeed")]
 internal class Patch_SignalForceNormalSpeed_Prefix
 {
-    public static bool Prefix(TimeSlower __instance, ref int ___forceNormalSpeedUntil)
+    public static bool Prefix(ref int ___forceNormalSpeedUntil)
     {
         var forceUntil = (int)(Find.TickManager.TicksGame + (800f / TimeControlSettings.speedMultiplier));
         ___forceNormalSpeedUntil = forceUntil;
