@@ -1,5 +1,8 @@
 # Changelog for DTimeControl
 
+1.4.6 - Slaughtering should now work better.
+
+
 1.4.5 - Added some combat extended job-drivers to the exclusions
 
 

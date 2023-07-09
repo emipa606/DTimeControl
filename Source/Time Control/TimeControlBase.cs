@@ -21,6 +21,7 @@ public static class TimeControlBase
         {
             "JobDriver_TendPatient",
             "JobDriver_Stabilize",
+            "JobDriver_Slaughter",
             "JobDriver_Lovin",
             "TMJobDriver_CastAbilityVerb", // A RimWorld of Magic
             "TMJobDriver_CastAbilitySelf", // A RimWorld of Magic
