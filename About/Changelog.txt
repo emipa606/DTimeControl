@@ -1,5 +1,8 @@
 # Changelog for DTimeControl
 
+1.4.7 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2654432921]Romance On The Rim[/url] (hopefully)
+
+
 1.4.6 - Slaughtering should now work better.
 
 

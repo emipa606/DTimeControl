@@ -26,6 +26,13 @@ public static class TimeControlBase
             "TMJobDriver_CastAbilityVerb", // A RimWorld of Magic
             "TMJobDriver_CastAbilitySelf", // A RimWorld of Magic
             "JobDriver_GotoAndCast", // A RimWorld of Magic
+            "JobDriver_GoToLoversPos", // Romance on the rim
+            "JobDriver_InitiateKiss", // Romance on the rim
+            "JobDriver_ReceiveKiss", // Romance on the rim
+            "JobDriver_PillowTalk", // Romance on the rim
+            "JobDriver_PlayInstrumentForLover", // Romance on the rim
+            "JobDriver_EnjoyPerformance", // Romance on the rim
+            "JobDriver_SkygazeTogether", // Romance on the rim
             "JobDriver_ReloadTurret", // Combat Extended
             "JobDriver_Reload" // Combat Extended
         };
