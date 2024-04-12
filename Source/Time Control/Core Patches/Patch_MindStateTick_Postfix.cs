@@ -5,8 +5,7 @@ using Verse.AI;
 
 namespace DTimeControl.Core_Patches.Pawn_Timer_Adjustments;
 
-[HarmonyPatch(typeof(Pawn_MindState))]
-[HarmonyPatch("MindStateTick")]
+[HarmonyPatch(typeof(Pawn_MindState), nameof(Pawn_MindState.MindStateTick))]
 internal class Patch_MindStateTick_Postfix
 {
     public static void Postfix(Pawn_MindState __instance)
@@ -38,9 +37,9 @@ internal class Patch_MindStateTick_Postfix
         }
 
         var curWeatherLerped = __instance.pawn.Map.weatherManager.CurWeatherLerped;
-        if (curWeatherLerped.exposedThought != null && !__instance.pawn.Position.Roofed(__instance.pawn.Map))
+        if (curWeatherLerped.weatherThought != null && !__instance.pawn.Position.Roofed(__instance.pawn.Map))
         {
-            __instance.pawn.needs.mood.thoughts.memories.TryGainMemoryFast(curWeatherLerped.exposedThought);
+            __instance.pawn.needs.mood.thoughts.memories.TryGainMemoryFast(curWeatherLerped.weatherThought);
         }
     }
 }

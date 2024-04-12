@@ -3,8 +3,7 @@ using Verse;
 
 namespace DTimeControl.Core_Patches;
 
-[HarmonyPatch(typeof(TimeSlower))]
-[HarmonyPatch("SignalForceNormalSpeed")]
+[HarmonyPatch(typeof(TimeSlower), nameof(TimeSlower.SignalForceNormalSpeed))]
 internal class Patch_SignalForceNormalSpeed_Prefix
 {
     public static bool Prefix(ref int ___forceNormalSpeedUntil)

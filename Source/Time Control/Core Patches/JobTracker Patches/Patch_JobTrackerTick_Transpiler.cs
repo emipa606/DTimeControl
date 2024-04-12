@@ -4,8 +4,7 @@ using Verse.AI;
 
 namespace DTimeControl.Core_Patches.JobTracker_Patches;
 
-[HarmonyPatch(typeof(Pawn_JobTracker))]
-[HarmonyPatch("JobTrackerTick")]
+[HarmonyPatch(typeof(Pawn_JobTracker), nameof(Pawn_JobTracker.JobTrackerTick))]
 internal class Patch_JobTrackerTick_Transpiler
 {
     private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)

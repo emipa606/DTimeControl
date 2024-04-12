@@ -4,8 +4,7 @@ using Verse;
 
 namespace DTimeControl;
 
-[HarmonyPatch(typeof(Map))]
-[HarmonyPatch("MapPreTick")]
+[HarmonyPatch(typeof(Map), nameof(Map.MapPreTick))]
 internal class Patch_MapPreTick_Prefix
 {
     public static bool Prefix(Map __instance)

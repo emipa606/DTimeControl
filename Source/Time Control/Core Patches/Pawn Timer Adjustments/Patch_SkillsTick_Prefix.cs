@@ -3,8 +3,7 @@ using RimWorld;
 
 namespace DTimeControl.Core_Patches.Pawn_Timer_Adjustments;
 
-[HarmonyPatch(typeof(Pawn_SkillTracker))]
-[HarmonyPatch("SkillsTick")]
+[HarmonyPatch(typeof(Pawn_SkillTracker), nameof(Pawn_SkillTracker.SkillsTick))]
 internal class Patch_SkillsTick_Prefix
 {
     public static bool Prefix()

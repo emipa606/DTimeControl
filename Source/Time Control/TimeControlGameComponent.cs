@@ -2,19 +2,13 @@
 
 namespace DTimeControl;
 
-public class TimeControlGameComponent : GameComponent
+public class TimeControlGameComponent(Game game) : GameComponent
 {
     public int adjustedTicks;
-    private readonly Game currentGame;
-
-    public TimeControlGameComponent(Game game)
-    {
-        currentGame = game;
-    }
 
     public override void StartedNewGame()
     {
-        TickUtility.GetManagerData(currentGame);
+        TickUtility.GetManagerData(game);
         TickUtility.adjustedTicksGameInt = adjustedTicks;
         TimeControlBase.SetCycleLength();
         base.StartedNewGame();
@@ -22,7 +16,7 @@ public class TimeControlGameComponent : GameComponent
 
     public override void LoadedGame()
     {
-        TickUtility.GetManagerData(currentGame);
+        TickUtility.GetManagerData(game);
         TickUtility.adjustedTicksGameInt = adjustedTicks;
         TimeControlBase.SetCycleLength();
         base.LoadedGame();

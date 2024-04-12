@@ -4,8 +4,7 @@ using Verse.AI;
 
 namespace DTimeControl.Core_Patches.JobTracker_Patches;
 
-[HarmonyPatch(typeof(JobDriver))]
-[HarmonyPatch("DriverTick")]
+[HarmonyPatch(typeof(JobDriver), nameof(JobDriver.DriverTick))]
 internal class Patch_DriverTick_Prefix
 {
     public static bool Prefix(JobDriver __instance)

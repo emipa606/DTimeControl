@@ -3,8 +3,7 @@ using Verse;
 
 namespace DTimeControl.Core_Patches;
 
-[HarmonyPatch(typeof(Pawn_InventoryTracker))]
-[HarmonyPatch("InventoryTrackerTick")]
+[HarmonyPatch(typeof(Pawn_InventoryTracker), nameof(Pawn_InventoryTracker.InventoryTrackerTick))]
 internal class Patch_InventoryTrackerTick_Prefix
 {
     public static bool Prefix()

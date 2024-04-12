@@ -4,8 +4,7 @@ using Verse.AI;
 
 namespace DTimeControl.Core_Patches.Pather_Patches;
 
-[HarmonyPatch(typeof(Pawn_PathFollower))]
-[HarmonyPatch("BestPathHadPawnsInTheWayRecently")]
+[HarmonyPatch(typeof(Pawn_PathFollower), nameof(Pawn_PathFollower.BestPathHadPawnsInTheWayRecently))]
 internal class Patch_BestPathHadPawnsInTheWayRecently_Transpiler
 {
     private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)

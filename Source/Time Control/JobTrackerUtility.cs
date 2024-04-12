@@ -8,16 +8,17 @@ namespace DTimeControl;
 [StaticConstructorOnStartup]
 public static class JobTrackerUtility
 {
-    public static MethodInfo DetermineNextConstantThinkTreeJob;
-    public static MethodInfo ShouldStartJobFromThinkTree;
-    public static MethodInfo CheckLeaveJoinableLordBecauseJobIssued;
+    public static readonly MethodInfo DetermineNextConstantThinkTreeJob;
+    public static readonly MethodInfo ShouldStartJobFromThinkTree;
+    public static readonly MethodInfo CheckLeaveJoinableLordBecauseJobIssued;
 
     static JobTrackerUtility()
     {
         DetermineNextConstantThinkTreeJob =
-            AccessTools.Method(typeof(Pawn_JobTracker), "DetermineNextConstantThinkTreeJob");
-        ShouldStartJobFromThinkTree = AccessTools.Method(typeof(Pawn_JobTracker), "ShouldStartJobFromThinkTree");
+            AccessTools.Method(typeof(Pawn_JobTracker), nameof(Pawn_JobTracker.DetermineNextConstantThinkTreeJob));
+        ShouldStartJobFromThinkTree =
+            AccessTools.Method(typeof(Pawn_JobTracker), nameof(Pawn_JobTracker.ShouldStartJobFromThinkTree));
         CheckLeaveJoinableLordBecauseJobIssued =
-            AccessTools.Method(typeof(Pawn_JobTracker), "CheckLeaveJoinableLordBecauseJobIssued");
+            AccessTools.Method(typeof(Pawn_JobTracker), nameof(Pawn_JobTracker.CheckLeaveJoinableLordBecauseJobIssued));
     }
 }

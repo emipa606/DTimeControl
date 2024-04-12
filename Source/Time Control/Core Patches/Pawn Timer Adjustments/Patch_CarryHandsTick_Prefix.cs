@@ -3,8 +3,7 @@ using Verse;
 
 namespace DTimeControl.Core_Patches;
 
-[HarmonyPatch(typeof(Pawn_CarryTracker))]
-[HarmonyPatch("CarryHandsTick")]
+[HarmonyPatch(typeof(Pawn_CarryTracker), nameof(Pawn_CarryTracker.CarryHandsTick))]
 internal class Patch_CarryHandsTick_Prefix
 {
     public static bool Prefix()

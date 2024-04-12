@@ -3,7 +3,7 @@ using RimWorld;
 
 namespace DTimeControl;
 
-[HarmonyPatch(typeof(PawnBreathMoteMaker), "ProcessPostTickVisuals")]
+[HarmonyPatch(typeof(PawnBreathMoteMaker), nameof(PawnBreathMoteMaker.ProcessPostTickVisuals))]
 internal class Patch_BreathMoteMakerTick_Prefix
 {
     public static bool Prefix()

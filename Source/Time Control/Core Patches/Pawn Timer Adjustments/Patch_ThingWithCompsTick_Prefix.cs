@@ -3,8 +3,7 @@ using Verse;
 
 namespace DTimeControl.Core_Patches;
 
-[HarmonyPatch(typeof(ThingWithComps))]
-[HarmonyPatch("Tick")]
+[HarmonyPatch(typeof(ThingWithComps), nameof(ThingWithComps.Tick))]
 internal class Patch_ThingWithCompsTick_Prefix
 {
     public static bool Prefix(ThingWithComps __instance)

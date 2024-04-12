@@ -14,8 +14,8 @@ public static class TickUtility
     public static TCTickList tickListRare;
     public static TCTickList tickListLong;
 
-    public static Type FilthMonitor;
-    public static MethodInfo fmt;
+    public static readonly Type FilthMonitor;
+    public static readonly MethodInfo fmt;
 
     public static int adjustedTicksGameInt = 0;
 

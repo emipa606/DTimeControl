@@ -7,16 +7,16 @@ namespace DTimeControl;
 
 public class TCTickList : TickList
 {
-    public List<List<Thing>> adjustedthingList = new List<List<Thing>>();
+    public readonly List<List<Thing>> adjustedthingList = [];
+
+    public readonly List<List<Thing>> normalThingList = [];
+    public new readonly List<List<Thing>> thingLists;
+    public new readonly List<Thing> thingsToDeregister;
+    public new readonly List<Thing> thingsToRegister;
+
+    public new readonly TickerType tickType;
 
     public int cycleStep;
-
-    public List<List<Thing>> normalThingList = new List<List<Thing>>();
-    public List<List<Thing>> thingLists;
-    public List<Thing> thingsToDeregister;
-    public List<Thing> thingsToRegister;
-
-    public TickerType tickType;
 
     public TCTickList(TickList old) : base(GetTickType(old))
     {
@@ -27,12 +27,12 @@ public class TCTickList : TickList
 
         for (var i = 0; i < TickInterval; i++)
         {
-            normalThingList.Add(new List<Thing>());
-            adjustedthingList.Add(new List<Thing>());
+            normalThingList.Add([]);
+            adjustedthingList.Add([]);
         }
     }
 
-    public int TickInterval
+    public new int TickInterval
     {
         get
         {
@@ -50,7 +50,7 @@ public class TCTickList : TickList
         }
     }
 
-    public List<Thing> BucketOf(Thing t)
+    public new List<Thing> BucketOf(Thing t)
     {
         var num = t.GetHashCode();
         if (num < 0)

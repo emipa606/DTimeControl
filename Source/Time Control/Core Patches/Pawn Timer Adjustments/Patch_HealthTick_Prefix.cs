@@ -3,8 +3,7 @@ using Verse;
 
 namespace DTimeControl.Core_Patches;
 
-[HarmonyPatch(typeof(Pawn_HealthTracker))]
-[HarmonyPatch("HealthTick")]
+[HarmonyPatch(typeof(Pawn_HealthTracker), nameof(Pawn_HealthTracker.HealthTick))]
 internal class Patch_HealthTick_Prefix
 {
     public static bool Prefix()

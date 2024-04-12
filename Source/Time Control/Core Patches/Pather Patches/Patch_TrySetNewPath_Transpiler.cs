@@ -4,8 +4,7 @@ using Verse.AI;
 
 namespace DTimeControl.Core_Patches.Pather_Patches;
 
-[HarmonyPatch(typeof(Pawn_PathFollower))]
-[HarmonyPatch("TrySetNewPath")]
+[HarmonyPatch(typeof(Pawn_PathFollower), nameof(Pawn_PathFollower.TrySetNewPath))]
 internal class Patch_TrySetNewPath_Transpiler
 {
     private static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)

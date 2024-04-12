@@ -4,8 +4,7 @@ using Verse.AI;
 
 namespace DTimeControl.Core_Patches.JobTracker_Patches;
 
-[HarmonyPatch(typeof(Pawn_JobTracker))]
-[HarmonyPatch("JobTrackerTick")]
+[HarmonyPatch(typeof(Pawn_JobTracker), nameof(Pawn_JobTracker.JobTrackerTick))]
 internal class Patch_JobTrackerTick_Postfix
 {
     public static bool Prefix(Pawn_JobTracker __instance, Pawn ___pawn)
@@ -22,11 +21,11 @@ internal class Patch_JobTrackerTick_Postfix
         }
 
         var start = (bool)JobTrackerUtility.ShouldStartJobFromThinkTree.Invoke(__instance,
-            new object[] { thinkResult });
+            [thinkResult]);
         if (start)
         {
             JobTrackerUtility.CheckLeaveJoinableLordBecauseJobIssued.Invoke(__instance,
-                new object[] { thinkResult });
+                [thinkResult]);
             __instance.StartJob(thinkResult.Job, JobCondition.InterruptForced, thinkResult.SourceNode, false,
                 false, ___pawn.thinker.ConstantThinkTree, thinkResult.Tag);
         }

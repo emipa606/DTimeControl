@@ -3,8 +3,7 @@ using RimWorld;
 
 namespace DTimeControl.Core_Patches;
 
-[HarmonyPatch(typeof(ResourceCounter))]
-[HarmonyPatch("ResourceCounterTick")]
+[HarmonyPatch(typeof(ResourceCounter), nameof(ResourceCounter.ResourceCounterTick))]
 internal class Patch_ResourceCounterTick_Postfix
 {
     public static void Postfix(ResourceCounter __instance)

@@ -17,8 +17,8 @@ public static class TimeControlBase
 
     static TimeControlBase()
     {
-        ExcludedListOfJobDrivers = new List<string>
-        {
+        ExcludedListOfJobDrivers =
+        [
             "JobDriver_TendPatient",
             "JobDriver_Stabilize",
             "JobDriver_Slaughter",
@@ -35,7 +35,7 @@ public static class TimeControlBase
             "JobDriver_SkygazeTogether", // Romance on the rim
             "JobDriver_ReloadTurret", // Combat Extended
             "JobDriver_Reload" // Combat Extended
-        };
+        ];
     }
 
     public static void SetCycleLength()

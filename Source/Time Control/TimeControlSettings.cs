@@ -79,7 +79,7 @@ public class TimeControlSettings : ModSettings
         var timeMultSliderRect = timeMultRect.RightPartPixels(timeMultRect.width - 300);
         Widgets.Label(timeMultLabelRect, "TiCo.DayLength".Translate());
         var multPercent = Mathf.RoundToInt(speedMultiplier * 100);
-        multPercent = Mathf.RoundToInt(Widgets.HorizontalSlider_NewTemp(timeMultSliderRect, multPercent, min, max,
+        multPercent = Mathf.RoundToInt(Widgets.HorizontalSlider(timeMultSliderRect, multPercent, min, max,
             false,
             $"{multPercent}%", null, null, 1f));
         speedMultiplier = multPercent / 100f;
