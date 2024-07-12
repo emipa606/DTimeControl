@@ -9,9 +9,6 @@ internal class Patch_DriverTick_Prefix
 {
     public static bool Prefix(JobDriver __instance)
     {
-        return !(TimeControlBase.partialTick < 1.0) ||
-               (!TimeControlSettings.scalePawns || !TimeControlSettings.slowWork ||
-                TimeControlBase.ExcludedListOfJobDrivers.Contains(__instance.GetType().Name)) &&
-               __instance is not (JobDriver_ChatWithPrisoner or JobDriver_Tame);
+        return TimeControlBase.partialTick >= 1.0 || !TimeControlSettings.scalePawns || !TimeControlSettings.slowWork || TimeControlBase.ExcludedListOfJobDrivers.Contains(__instance.GetType());
     }
 }

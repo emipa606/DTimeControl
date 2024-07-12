@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using HarmonyLib;
+using Verse.AI;
 
 namespace DTimeControl;
 
@@ -13,16 +15,21 @@ public static class TimeControlBase
 
     public static int cycleLength = 1;
 
-    public static readonly List<string> ExcludedListOfJobDrivers;
+    public static readonly HashSet<Type> ExcludedListOfJobDrivers;
 
     static TimeControlBase()
     {
-        ExcludedListOfJobDrivers =
-        [
-            "JobDriver_TendPatient",
+        HashSet<Type> excludeList = [
+            typeof(JobDriver_TendPatient),
+            typeof(JobDriver_Slaughter),
+            typeof(JobDriver_Lovin),
+            typeof(JobDriver_ChatWithPrisoner),
+            typeof(JobDriver_Tame)
+        ];
+
+        // List of optional types that may or may not exist. Need to dynamically add these to this list.
+        List<string> conditionalExclusions = [
             "JobDriver_Stabilize",
-            "JobDriver_Slaughter",
-            "JobDriver_Lovin",
             "TMJobDriver_CastAbilityVerb", // A RimWorld of Magic
             "TMJobDriver_CastAbilitySelf", // A RimWorld of Magic
             "JobDriver_GotoAndCast", // A RimWorld of Magic
@@ -36,6 +43,18 @@ public static class TimeControlBase
             "JobDriver_ReloadTurret", // Combat Extended
             "JobDriver_Reload" // Combat Extended
         ];
+
+        for(int i = 0; i < conditionalExclusions.Count; i++)
+        {
+            var exclusion = conditionalExclusions[i];
+            var tp = AccessTools.TypeByName(exclusion);
+            if(tp is not null)
+            {
+                excludeList.Add(tp);
+            }
+        }
+        
+        ExcludedListOfJobDrivers = excludeList;
     }
 
     public static void SetCycleLength()
