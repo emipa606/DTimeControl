@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-using RimWorld;
 using Verse.AI;
 
 namespace DTimeControl.Core_Patches.JobTracker_Patches;
@@ -9,6 +8,7 @@ internal class Patch_DriverTick_Prefix
 {
     public static bool Prefix(JobDriver __instance)
     {
-        return TimeControlBase.partialTick >= 1.0 || !TimeControlSettings.scalePawns || !TimeControlSettings.slowWork || TimeControlBase.ExcludedListOfJobDrivers.Contains(__instance.GetType());
+        return TimeControlBase.partialTick >= 1.0 || !TimeControlSettings.scalePawns || !TimeControlSettings.slowWork ||
+               TimeControlBase.ExcludedListOfJobDrivers.Contains(__instance.GetType());
     }
 }

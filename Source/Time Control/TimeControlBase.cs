@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using HarmonyLib;
 using RimWorld;
 using UnityEngine;
 using Verse;
-using HarmonyLib;
-using Verse.AI;
 
 namespace DTimeControl;
 
@@ -19,7 +18,8 @@ public static class TimeControlBase
 
     static TimeControlBase()
     {
-        HashSet<Type> excludeList = [
+        HashSet<Type> excludeList =
+        [
             typeof(JobDriver_TendPatient),
             typeof(JobDriver_Slaughter),
             typeof(JobDriver_Lovin),
@@ -28,7 +28,8 @@ public static class TimeControlBase
         ];
 
         // List of optional types that may or may not exist. Need to dynamically add these to this list.
-        List<string> conditionalExclusions = [
+        List<string> conditionalExclusions =
+        [
             "JobDriver_Stabilize",
             "TMJobDriver_CastAbilityVerb", // A RimWorld of Magic
             "TMJobDriver_CastAbilitySelf", // A RimWorld of Magic
@@ -44,16 +45,15 @@ public static class TimeControlBase
             "JobDriver_Reload" // Combat Extended
         ];
 
-        for(int i = 0; i < conditionalExclusions.Count; i++)
+        foreach (var exclusion in conditionalExclusions)
         {
-            var exclusion = conditionalExclusions[i];
             var tp = AccessTools.TypeByName(exclusion);
-            if(tp is not null)
+            if (tp is not null)
             {
                 excludeList.Add(tp);
             }
         }
-        
+
         ExcludedListOfJobDrivers = excludeList;
     }
 

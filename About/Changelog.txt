@@ -1,5 +1,8 @@
 # Changelog for DTimeControl
 
+1.5.1 - Fixed reduce will and enslave when timescale is above 100%. Thanks Denneisk for the patch!
+
+
 1.5.0 - Updated for 1.5
 
 
