@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TabulaRasa.UpdateDef Abstract="true" Name="DTimeControl_UpdateInfoBase">
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2887355135</linkUrl>
+		<banner>UpdateInfo/DTimeControl</banner>
+	</TabulaRasa.UpdateDef>
+	<TabulaRasa.UpdateDef ParentName="DTimeControl_UpdateInfoBase" MayRequire="neronix17.toolbox">
+		<defName>DTimeControl_1_5_1</defName>
+		<date>2026/1/11</date>
+		<content>This mod will not be further updated.</content>
+	</TabulaRasa.UpdateDef>
+</Defs>
+

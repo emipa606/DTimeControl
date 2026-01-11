@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>[D] Time Control (Continued)</name>
+  <name>[Abandoned] [D] Time Control (Continued)</name>
   <packageId>Mlie.DTimeControl</packageId>
   <author>Dametri</author>
   <url>https://github.com/emipa606/DTimeControl</url>
@@ -22,7 +22,7 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+  <description>[img]https://img.litet.net/logos/Info.png[/img]
 Update of Dametris mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2109225757
 with the 1.3 version from the update by Denneisk
@@ -31,24 +31,24 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2558693847
 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1319782555]Snap Out![/url]
 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2654432921]Romance On The Rim[/url]
 
-[img]https://i.imgur.com/pufA0kM.png[/img]
+[img]https://img.litet.net/logos/Abandoned.png[/img]
 
 [table]
     [tr]
-        [td][url=https://dsc.gg/mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
-        [td][url=https://github.com/emipa606/DTimeControl][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+        [td][url=https://discord.gg/h5TY6DA][img]https://img.litet.net/logos/Discord.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/DTimeControl][img]https://img.litet.net/logos/Github.png[/img][/url][/td]
     [/tr]
     [tr]
-        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
-        [td][img]https://i.imgur.com/h5VwTNL.png[/img][/td]
+        [td][img]https://img.litet.net/logos/SafeToAdd.png[/img][/td]
+        [td][img]https://img.litet.net/logos/SafeToRemove.png[/img][/td]
     [/tr]
 [/table]
 	
-[img]https://i.imgur.com/Z4GOv8H.png[/img]
+[img]https://img.litet.net/logos/OriginalDescription.png[/img]
 [h1]Overview[/h1]
 Spare some time and leave a like!
 
-[img]https://i.imgur.com/FcAqtoA.png[/img]
+[img]https://img.litet.net/FcAqtoA.png[/img]
 [h2]Designed for Rimworld 1.1, 1.2 [/h2]
 
 Gives you control over the length of a day, giving your colonists more (or less) time to move around and do things.
@@ -83,7 +83,7 @@ By default, days will be 25% longer. Open the options menu for the slider to cha
 
 [b]Make the day shorter at your own peril...[/b]
 
-[img=https://i.imgur.com/lN11WhK.gif][/img]
+[img=https://img.litet.net/lN11WhK.gif][/img]
 
 [i](I made this mod primarily to allow for longer days, but those aren't as easy to show in GIFs. Also, extremely short days can be kind of funny - raiders give up almost as soon as they spawn, winter starts and finishes before pawns have time to get hypothermia, and it generally feels like your colonists are Ents.)[/i]
 
@@ -112,17 +112,17 @@ Tested with:
 This mod alters some pretty significant tick code. Ticks are the core mechanism by which the game advances. I hope that there will be few conflicts, but let me know if you find any.
 Known conflicts:
 - Zombieland
-[img]https://i.imgur.com/PwoNOj4.png[/img]
+[img]https://img.litet.net/logos/ReportingIssues.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
-[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader[/url] and command Ctrl+F12
+[*] Always post your log using the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Log Uploader[/url]
 [*] For best support, please use the Discord-channel for error-reporting.
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
-[/list]
+[/list] 
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2887355135][img]https://img.shields.io/github/v/release/emipa606/DTimeControl?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url]</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.5.1</modVersion>
+  <modVersion IgnoreIfNoMatchingField="True">1.5.2</modVersion>
 </ModMetaData>

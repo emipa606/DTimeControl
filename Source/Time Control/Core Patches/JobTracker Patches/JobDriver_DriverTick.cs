@@ -1,0 +1,14 @@
+﻿using HarmonyLib;
+using Verse.AI;
+
+namespace DTimeControl.Core_Patches.JobTracker_Patches;
+
+[HarmonyPatch(typeof(JobDriver), nameof(JobDriver.DriverTick))]
+internal class JobDriver_DriverTick
+{
+    public static bool Prefix(JobDriver __instance)
+    {
+        return TimeControlBase.partialTick >= 1.0 || !TimeControlSettings.scalePawns || !TimeControlSettings.slowWork ||
+               TimeControlBase.ExcludedListOfJobDrivers.Contains(__instance.GetType());
+    }
+}

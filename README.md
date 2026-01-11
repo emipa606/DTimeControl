@@ -1,6 +1,6 @@
-# [[D] Time Control (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2887355135)
+# [[Abandoned] [D] Time Control (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2887355135)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of Dametris mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2109225757
@@ -10,15 +10,15 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2558693847
 - Added support for [Snap Out!](https://steamcommunity.com/sharedfiles/filedetails/?id=1319782555)
 - Added support for [Romance On The Rim](https://steamcommunity.com/sharedfiles/filedetails/?id=2654432921)
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Abandoned.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 # Overview
 
 Spare some time and leave a like!
 
-![Image](https://i.imgur.com/FcAqtoA.png)
+![Image](https://img.litet.net/FcAqtoA.png)
 
 ## Designed for Rimworld 1.1, 1.2 
 
@@ -59,7 +59,7 @@ By default, days will be 25% longer. Open the options menu for the slider to cha
 
 **Make the day shorter at your own peril...**
 
-[img=https://i.imgur.com/lN11WhK.gif][/img]
+[img=https://img.litet.net/lN11WhK.gif][/img]
 
 *(I made this mod primarily to allow for longer days, but those aren't as easy to show in GIFs. Also, extremely short days can be kind of funny - raiders give up almost as soon as they spawn, winter starts and finishes before pawns have time to get hypothermia, and it generally feels like your colonists are Ents.)*
 
@@ -93,18 +93,18 @@ Tested with:
 This mod alters some pretty significant tick code. Ticks are the core mechanism by which the game advances. I hope that there will be few conflicts, but let me know if you find any.
 Known conflicts:
 - Zombieland
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
 -  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
-
+ 
 
 [![Image](https://img.shields.io/github/v/release/emipa606/DTimeControl?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2887355135)

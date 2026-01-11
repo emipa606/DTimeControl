@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HugsLib.UpdateFeatureDef Abstract="true" Name="DTimeControl_UpdateFeatureBase">
+		<modNameReadable>DTimeControl</modNameReadable>
+		<linkUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2887355135</linkUrl>
+	</HugsLib.UpdateFeatureDef>
+	<HugsLib.UpdateFeatureDef ParentName="DTimeControl_UpdateFeatureBase">
+		<defName>DTimeControl_1_5_1</defName>
+		<assemblyVersion>1.5.1</assemblyVersion>
+		<content>This mod will not be further updated.</content>
+	</HugsLib.UpdateFeatureDef>
+</Defs>
+
